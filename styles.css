@@ -5,6 +5,12 @@ h1 {
     font-size: 80px;
 } 
 
+h2 , p{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
 body {
     background-color: rgb(0, 0, 0);
     margin: 10px;
@@ -19,4 +25,24 @@ img {
     height: 100%;
     object-fit: cover;
     z-index: -1; 
+    opacity: 0.55;
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 5%;
+    color: rgb(42, 145, 4);
+    
+}
+
+.info {
+    display: flex; 
+    justify-content: center;
+    padding: 100px;
+    border-style: solid;
+    background-color: black;
+    box-shadow: 0px 0px 10px 0px #ffffff;
 }
