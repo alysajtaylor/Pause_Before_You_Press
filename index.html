@@ -6,6 +6,7 @@
     <meta name="description" content="Learn how to navigate technology used in everyday life." />
     <title>Connecting Generations</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <img src="circuit_med.jpg" alt="circuitboard background" class="background" />
@@ -18,11 +19,18 @@
       </div>
 
       <div class="boxes">
-        <div class="info">block 1</div>
-        <div class="info">block 2</div>
-        <div class="info">block 3</div>
-        <div class="info">block 4</div>
+        <div class="info clickBox" data-block="1">block 1</div>
+        <div class="info clickBox" data-block="2">block 2</div>
+        <div class="info clickBox" data-block="3">block 3</div>
+        <div class="info clickBox" data-block="4">block 4</div>
       </div>
+
+      <div id="popup-overlay" class="popup-overlay">
+        <div class="popup-content">
+          <h3 id="popup-title">Title placeholder</h3>
+          <p id="popup-text">Infographic content goes here.</p>
+          <p class="close-hint">(Click anywhere to close)</p>
+        </div>
     </main>
     <footer>
       <p class="attribution">
