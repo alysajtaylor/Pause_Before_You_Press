@@ -1,5 +1,5 @@
 h1 {
-    font-family: 'Rubik Bubbles', system-ui;
+    font-family: 'Rubik Bubbles', system-ui, sans-serif;
     color:white;
     text-shadow: 0px 0px 10px #29ff45;
 }
@@ -21,7 +21,7 @@ h1 {
     color: white;
     font-size: larger;
     margin: 10px 0;
-    font-family: 'Rubik Bubbles', system-ui;
+    font-family: 'Rubik Bubbles', system-ui, sans-serif;
 }
 
 body {
@@ -63,11 +63,12 @@ body {
     box-shadow: 0px 0px 10px 0px #ffffff;
 }
 
-/* --- Footer & Attribution Styles --- */
+/*  Footer & Attribution Styles  */
 footer {
     background-color: rgba(0, 0, 0, 0.7); 
     backdrop-filter: blur(5px); 
     border-top: 1px solid rgb(42, 145, 4); 
+    border-radius: 15px;
     text-align: center;
     padding: 20px;
     margin-top: 60px;
