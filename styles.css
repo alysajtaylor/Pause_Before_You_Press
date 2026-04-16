@@ -5,12 +5,12 @@ h1 {
 }
 
 .header {
-    background-color: rgba(0, 0, 0, 0.6); 
+    background-color: rgba(0, 0, 0, 0.67); 
     backdrop-filter: blur(5px); 
     max-width: 800px;
     margin: 0 auto; 
     padding: 30px;
-    border-radius: 15px; 
+    border-radius: 25px; 
     border: 1px solid rgba(0, 0, 0, 0.295); 
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.8);
     text-align: center;
@@ -19,6 +19,7 @@ h1 {
 
 .header h2, .header p {
     color: white;
+    font-size: larger;
     margin: 10px 0;
     font-family: 'Rubik Bubbles', system-ui;
 }
@@ -29,7 +30,7 @@ body {
     padding: 20px;;
 }
 
-img {
+.background {
     position: fixed;
     top: 0;
     left: 0;
@@ -47,6 +48,7 @@ img {
     gap: 30px;
     margin: 5%;
     color: rgb(42, 145, 4);
+    font-size: larger;
     
 }
 
@@ -55,7 +57,46 @@ img {
     justify-content: center;
     padding: 100px;
     border-style: solid;
-    border-radius: 15px;
-    background-color: black;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.654);
+    backdrop-filter: blur(5px);
     box-shadow: 0px 0px 10px 0px #ffffff;
+}
+
+/* --- Footer & Attribution Styles --- */
+footer {
+    background-color: rgba(0, 0, 0, 0.7); 
+    backdrop-filter: blur(5px); 
+    border-top: 1px solid rgb(42, 145, 4); 
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    margin-left: 25%;
+    margin-right: 25%; 
+}
+
+.attribution {
+    color: #cccccc; 
+    font-family: system-ui, -apple-system, sans-serif; 
+    font-size: 14px;
+    margin: 0;
+}
+
+.attribution a {
+    color: rgb(42, 145, 4);
+    text-decoration: none; 
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.attribution a:hover {
+    color: white;
+    text-shadow: 0px 0px 8px rgb(42, 145, 4);
+}
+
+.attribution img {
+    height: 1.2em;
+    margin-right: 0.125em;
+    display: inline;
+    vertical-align: middle; 
+    filter: invert(1); 
 }
