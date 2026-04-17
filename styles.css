@@ -38,7 +38,7 @@ body {
     height: 100%;
     object-fit: cover;
     z-index: -1; 
-    opacity: 0.80;
+    opacity: 0.50;
 }
 
 .boxes {
@@ -58,6 +58,7 @@ body {
     padding: 100px;
     border-style: solid;
     border-radius: 25px;
+    font-size: x-large;
     background-color: rgba(0, 0, 0, 0.654);
     backdrop-filter: blur(5px);
     box-shadow: 0px 0px 10px 0px #ffffff;
@@ -153,4 +154,86 @@ footer {
     color: white;
     font-size: 16px;
     margin-top: 30px;
+}
+
+/* --- Pre-written Chat Options --- */
+.chat-window {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    height: 300px; /* Fixed height so it doesn't stretch the page infinitely */
+    overflow-y: auto; /* Adds a scrollbar if messages get too long */
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px inset rgba(255, 255, 255, 0.1);
+}
+.chat-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(41, 255, 69, 0.3); /* Subtle green border */
+    border-radius: 20px;
+    max-width: 800px;
+    margin: 40px auto; /* Centers it and adds spacing */
+    padding: 20px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.chat-header h3 {
+    color: #ffffff; 
+    font-size: xx-large;
+    margin: 0 0 5px 0;
+    font-family: 'Rubik Bubbles', system-ui, sans-serif;
+}
+
+.chat-header p {
+    color: #3abe2c;
+    font-size: xx-large;
+    margin: 0;
+    font-size: 14px;
+}
+
+.options-area {
+    display: flex;
+    flex-wrap: wrap; /* Allows buttons to wrap to a new line on small screens */
+    gap: 10px;
+    justify-content: center;
+}
+
+.chat-option {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgb(42, 145, 4);
+    color: rgb(42, 145, 4);
+    border-radius: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, sans-serif;
+    transition: all 0.3s ease;
+}
+
+.chat-option:hover {
+    background-color: rgb(42, 145, 4);
+    color: black;
+    box-shadow: 0px 0px 12px rgb(42, 145, 4);
+    transform: translateY(-2px);
+}
+
+/* Optional: Make the buttons look disabled while the AI is "typing" */
+.chat-option:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.ai-message {
+    background-color: #222;
+    color: white;
+    align-self: flex-start;
+    border-bottom-left-radius: 2px;
+    border-left: 2px solid #29ff45; 
+    font-size: 25px;
 }
