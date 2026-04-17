@@ -86,13 +86,12 @@ body {
     color: #1e3a8a;
 }
 
-.quiz-box {
+.info-box {
     background-color: #83e0ff74;
     backdrop-filter: blur(5);
     border-radius: 15px;
-    margin-left: 19%;
-    margin-right: 19%;
-    margin-top: 2%;
+    max-width: 800px;
+    margin: 40px auto 20px auto;
     padding-bottom: 10px;
     z-index: -1;
 }
@@ -105,7 +104,6 @@ body {
     max-width: 800px;
     margin: 40px auto; 
     padding: 30px;
-   /* box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);*/
     box-shadow: 0px 4px 20px #baebfd;
     text-align: center;
 }
