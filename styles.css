@@ -1,5 +1,6 @@
 h1 {
     font-family: 'Rubik Bubbles', system-ui, sans-serif;
+    font-size: 2rem;
     color:#1e3a8a;
     margin-bottom: 5px;
 }
@@ -18,13 +19,13 @@ h1 {
 
 
 .header h2 {
-    color: #1e3a8a;
-    font-size: larger;
+    color: #5ca9e8;
+    font-size: 1.2rem;
     margin: 10px 0;
 }
 
 .header p {
-    color: #475569;
+    color: #5ca9e8;
     font-size: 1.1rem;
     margin: 10px 0;
 }
@@ -57,7 +58,6 @@ body {
     gap: 30px;
     margin: 5%;
     font-size: larger;
-    
 }
 
 .info {
@@ -70,6 +70,31 @@ body {
     background-color: rgba(0, 0, 0, 0.654);
     backdrop-filter: blur(5px);
     box-shadow: 0px 0px 10px 0px #ffffff;
+}
+
+.learn {
+    display: flex;
+    justify-content: center;
+    background-color: #6ec1eb;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 2%;
+}
+
+.intro { 
+    font-size: 1.2rem;
+    color: #1e3a8a;
+}
+
+.quiz-box {
+    background-color: #83e0ff74;
+    backdrop-filter: blur(5);
+    border-radius: 15px;
+    margin-left: 19%;
+    margin-right: 19%;
+    margin-top: 2%;
+    padding-bottom: 10px;
+    z-index: -1;
 }
 
 /* Interactive Scam Quiz Styles */
