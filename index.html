@@ -19,27 +19,22 @@
       </div>
 
       <div class="boxes">
-        <div class="info clickBox" data-block="1">SCAM Prevention</div>
-        <div class="info clickBox" data-block="2">Troubleshooting with AI</div>
+        <div class="info clickBox" data-block="1">Pause Method</div>
+        <div class="info clickBox" data-block="2">SLAM Method</div>
       </div>
 
-      <div class="chat-container">
-        <div class="chat-header">
-          <h3>Prompting AI</h3>
-          <p>Click a topic below to see how an AI assistant can help you.</p>
+      <div class="quiz-container">
+        <div class="quiz-header">
+          <h3>Spot the Scam: Real or Fake?</h3>
+          <p>Read the two messages below. Click on the one that you think is a <strong>SCAM</strong>.</p>
         </div>
         
-        <div class="chat-window" id="chat-window">
-          <div class="message ai-message">
-            This is meant to simulate how to use an AI model, like ChatGPT. 
-            Select one of the common questions below to see how an AI would answer.
-          </div>
-        </div>
+        <div class="quiz-options-area" id="quiz-options-area"></div>
 
-        <div class="chat-input-area options-area">
-          <button class="chat-option" data-topic="prompting">How do I effectively prompt AI?</button>
-          <button class="chat-option" data-topic="router">How do I reset my Wi-Fi router?</button>
-          <button class="chat-option" data-topic="password">What are the best password safety tips?</button>
+        <div id="quiz-feedback" class="quiz-feedback">
+          <h4 id="feedback-title">Result</h4>
+          <p id="feedback-text">Explanation goes here.</p>
+          <button id="next-quiz-btn" class="quiz-option">Try Another Scenario</button>
         </div>
       </div>
 
